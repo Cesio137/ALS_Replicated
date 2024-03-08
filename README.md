@@ -1,4 +1,4 @@
-# ALS_Replicated UE 4.26 | 4.27 | 5.1 | 5.2 | 5.3 Blueprint Only
+# ALS_Replicated UE 5.1 | 5.2 | 5.3 Blueprint Only
 
 This is a community-based effort to fully and effectively replicate Advanced Locomotion System v4 which is permanently free on the Epic Marketplace. 
 
@@ -9,6 +9,18 @@ Discussion regarding the replication effort of ALS should take place on the offi
 </p>
 
 This repository will operate on a series of pull requests. You are free to download modify and pull request your modifications in. If it meets with the criteria of effectively replicating the project, it will be reviewed and merged in.
+
+---
+
+The primary objective of this ALS version is to modify the structure for greater flexibility, and to incorporate new features from Unreal Engine 5 for enhanced performance.
+
+## Features & To-Do list:
+
+- [x] Decoupled ALS_AnimBP logic blueprint from the animation blueprint
+- [x] Separated Overlay States into multiple sub-animation blueprints
+- [ ] Stripping example nodes from the main blueprint
+- [ ] Moving logic to thread-safe operations
+- [ ] Fixing minor bugs existing in ALS
 
 ## Sponsor me
 
@@ -37,7 +49,7 @@ A description of what should happen.
 A description of what actually happens.
 ```
 
-# Setting Up Your Project ```UE4 & UE5```
+# Setting Up Your Project
 
 - Clone the repository or download the latest release.
 
@@ -49,7 +61,8 @@ A description of what actually happens.
   +Profiles=(Name="ALS_Character",CollisionEnabled=QueryAndPhysics,bCanModify=True,ObjectTypeName="Pawn",CustomResponses=((Channel="Visibility",Response=ECR_Ignore),(Channel="Camera",Response=ECR_Ignore),(Channel="Climbable",Response=ECR_Ignore)),HelpMessage="Custom collision settings for the capsule in the ALS_BaseCharacter.")
   +DefaultChannelResponses=(Channel=ECC_GameTraceChannel2,DefaultResponse=ECR_Block,bTraceType=True,bStaticObject=False,Name="Climbable")
   ```
-# Setting Up Your Project ```UE4 ONLY```
+  
+  # Setting Up Your Project ```UE4 ONLY```
 
 - Add the lines below into your project's `DefaultInput.ini`, below `[/Script/Engine.InputSettings]` tag:
   
