@@ -18,8 +18,8 @@ The primary objective of this ALS version is to modify the structure for greater
 
 - [x] Decoupled ALS_AnimBP logic blueprint from the animation blueprint
 - [x] Separated Overlay States into multiple sub-animation blueprints
-- [ ] Stripping example nodes from the main blueprint
-- [ ] Moving logic to thread-safe operations
+- [x] Stripping example logic from the master blueprint
+- [ ] Moving animation logic to thread-safe operations
 - [ ] Fixing minor bugs existing in ALS
 
 ## Sponsor me
